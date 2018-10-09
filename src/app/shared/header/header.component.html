@@ -1,0 +1,22 @@
+<mat-toolbar id="header" color="primary" class="mat-elevation-z6" [style.width.px]="windowWidth" [style.left.px]="offsetLeft">
+  <a class="banner" routerLink="/">
+    <img src="assets/banner.jpg">
+  </a>
+  <div id="header-links">
+    <a class="link" routerLink="/home" routerLinkActive="active-link">
+      <mat-icon>home</mat-icon>
+    </a>
+    <a class="link" routerLink="/rankings" routerLinkActive="active-link">
+      <mat-icon>format_list_numbered</mat-icon>
+    </a>
+    <a class="link" routerLink="/history" routerLinkActive="active-link">
+      <mat-icon>history</mat-icon>
+    </a>
+    <a class="link" routerLink="/rules" routerLinkActive="active-link">
+      <mat-icon>gavel</mat-icon>
+    </a>
+    <a class="link" routerLink="/blog" routerLinkActive="active-link">
+      <mat-icon>forum</mat-icon>
+    </a>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,10 @@
+<rowdy-header [windowWidth]="contentWidth" [offsetLeft]="offsetLeft" [mobile]="mobile"></rowdy-header>
+<rowdy-navbar *ngIf="navbar"></rowdy-navbar>
+<rowdy-sidenav *ngIf="!mobile" [style.height.px]="sidenavHeight"></rowdy-sidenav>
+
+<div id="content" class="scrollable" [style.height.px]="windowHeight" [style.width.px]="contentWidth" [style.left.px]="offsetLeft"
+  [style.background-image]="hasBackgroundImage ? 'url(' + backgroundImage + ')' : 'none'">
+  <ng-content></ng-content>
+  <iu-wallpaper *ngIf="hasWallpaper" [images]="images" [imageOpacity]="0.6" [shuffle]="true" [offsetLeft]="offsetLeft"
+    [offsetTop]="offsetTop"></iu-wallpaper>
+</div>

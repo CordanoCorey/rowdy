@@ -26,7 +26,7 @@ export class ContainerComponent extends SmartComponent implements OnInit {
   }
 
   get hasWallpaper(): boolean {
-    return this._hasWallpaper && !this.mobile;
+    return this._hasWallpaper;
   }
 
   get hasBackgroundImage(): boolean {
@@ -34,7 +34,16 @@ export class ContainerComponent extends SmartComponent implements OnInit {
   }
 
   get images(): Image[] {
-    return [
+    const img = [
+      build(Image, { src: 'assets/14.jpg', height: 200, width: 340 }),
+      build(Image, { src: 'assets/19.jpg', height: 309, width: 250 }),
+      build(Image, { src: 'assets/20.jpg', height: 500, width: 641 }),
+      build(Image, { src: 'assets/21.jpg', height: 320, width: 480 }),
+      build(Image, { src: 'assets/22.jpg', height: 493, width: 740 }),
+      build(Image, { src: 'assets/23.jpg', height: 540, width: 960 }),
+      build(Image, { src: 'assets/26.jpg', height: 360, width: 480 }),
+      build(Image, { src: 'assets/27.jpg', height: 433, width: 770 }),
+      build(Image, { src: 'assets/28.jpg', height: 400, width: 620 }),
       build(Image, { src: 'assets/1.jpg', height: 677, width: 500 }),
       build(Image, { src: 'assets/2.jpg', height: 691, width: 500 }),
       build(Image, { src: 'assets/3.jpg', height: 405, width: 300 }),
@@ -48,24 +57,16 @@ export class ContainerComponent extends SmartComponent implements OnInit {
       build(Image, { src: 'assets/11.jpg', height: 350, width: 625 }),
       build(Image, { src: 'assets/12.jpg', height: 552, width: 980 }),
       build(Image, { src: 'assets/13.jpg', height: 851, width: 750 }),
-      build(Image, { src: 'assets/14.jpg', height: 200, width: 340 }),
-      build(Image, { src: 'assets/15.jpg', height: 1080, width: 1920 }),
       build(Image, { src: 'assets/16.jpg', height: 720, width: 1280 }),
       build(Image, { src: 'assets/17.jpg', height: 720, width: 1280 }),
       build(Image, { src: 'assets/18.jpg', height: 720, width: 1280 }),
-      build(Image, { src: 'assets/19.jpg', height: 309, width: 250 }),
-      build(Image, { src: 'assets/20.jpg', height: 500, width: 641 }),
-      build(Image, { src: 'assets/21.jpg', height: 320, width: 480 }),
-      build(Image, { src: 'assets/22.jpg', height: 493, width: 740 }),
-      build(Image, { src: 'assets/23.jpg', height: 540, width: 960 }),
       build(Image, { src: 'assets/24.jpg', height: 1365, width: 2048 }),
       build(Image, { src: 'assets/25.jpg', height: 683, width: 1024 }),
-      build(Image, { src: 'assets/26.jpg', height: 360, width: 480 }),
-      build(Image, { src: 'assets/27.jpg', height: 433, width: 770 }),
-      build(Image, { src: 'assets/28.jpg', height: 400, width: 620 }),
       build(Image, { src: 'assets/29.jpg', height: 1680, width: 3200 }),
       build(Image, { src: 'assets/30.jpg', height: 698, width: 1200 }),
+      build(Image, { src: 'assets/15.jpg', height: 1080, width: 1920 }),
     ];
+    return this.mobile ? img.filter((x, i) => i < 20) : img;
   }
 
   get contentWidth(): number {

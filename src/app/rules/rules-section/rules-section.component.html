@@ -1,0 +1,12 @@
+<iu-accordion [opened]="false">
+  <div class="accordion-trigger">
+    {{ section.title }}
+  </div>
+  <div class="accordion-content">
+    <rowdy-rule *ngFor="let rule of section.rules" [rule]="rule"></rowdy-rule>
+  </div>
+</iu-accordion>
+<!-- <div class="section">
+  {{ section.title }}
+  <rowdy-rule *ngFor="let rule of section.rules" [rule]="rule"></rowdy-rule>
+</div> -->

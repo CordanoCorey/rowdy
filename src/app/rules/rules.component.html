@@ -1,3 +1,23 @@
 <rowdy-container [hasWallpaper]="true">
-
+    <div class="inner-content" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+        <!-- <rowdy-rules-section *ngFor="let section of sections" [section]="section"></rowdy-rules-section> -->
+        <iu-accordion [opened]="false">
+            <div class="accordion-trigger">
+                {{ sections[0].title }}
+                <mat-icon>expand_more</mat-icon>
+            </div>
+            <div class="accordion-content">
+                <rowdy-rule *ngFor="let rule of sections[0].rules" [rule]="rule"></rowdy-rule>
+            </div>
+        </iu-accordion>
+        <iu-accordion [opened]="false">
+            <div class="accordion-trigger">
+                {{ sections[1].title }}
+                <mat-icon>expand_more</mat-icon>
+            </div>
+            <div class="accordion-content">
+                <rowdy-rule *ngFor="let rule of sections[1].rules" [rule]="rule"></rowdy-rule>
+            </div>
+        </iu-accordion>
+    </div>
 </rowdy-container>

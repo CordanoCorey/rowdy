@@ -1,0 +1,10 @@
+@import '~@angular/material/_theming';
+@import '../../../common';
+:host {
+    z-index: 9;
+}
+
+.section {
+    @include black-gradient();
+    color: #fff;
+}

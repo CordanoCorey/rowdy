@@ -1,3 +1,4 @@
-<p>
-  {{ rule.content }}
-</p>
+<div class="rule">
+  <div *ngIf="rule.heading" class="heading">{{ rule.heading }}</div>
+  <p [innerHtml]="rule.content"></p>
+</div>

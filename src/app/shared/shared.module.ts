@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { MatIconModule, MatToolbarModule } from '@angular/material';
 import { LibraryModule } from '@caiu/library';
 
 import { ContainerComponent } from './container/container.component';
@@ -11,8 +10,6 @@ import { SocialIconsComponent } from './social-icons/social-icons.component';
 @NgModule({
   imports: [
     LibraryModule,
-    MatIconModule,
-    MatToolbarModule,
   ],
   declarations: [
     ContainerComponent,
@@ -23,8 +20,6 @@ import { SocialIconsComponent } from './social-icons/social-icons.component';
   ],
   exports: [
     LibraryModule,
-    MatIconModule,
-    MatToolbarModule,
     ContainerComponent,
   ]
 })

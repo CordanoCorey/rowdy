@@ -1,31 +1,46 @@
 @import '~@angular/material/_theming';
 @import '../../common';
+
 .inner-content {
-    width: 1000px;
-    margin: 50px auto;
-    z-index: 9;
+  width: 1000px;
+  margin: 50px auto;
+  z-index: 9;
+  color: #fff;
+
+  iu-accordion {
     color: #fff;
-    iu-accordion {
-        color: #fff;
-        z-index: 9;
-        width: 100%;
-        .accordion-trigger {
-            position: relative;
-            @include mat-elevation(12);
-            @include black-gradient();
-            height: 72px;
-            width: 100%;
-            padding: 0;
-            line-height: 72px;
-            font-size: 48px;
-            mat-icon {
-                position: absolute;
-                right: 60px;
-                font-size: 72px;
-            }
-        }
-        .accordion-content {
-            background: rgba(0, 0, 0, 0.7);
-        }
+    z-index: 9;
+    width: 100%;
+
+    .accordion-trigger {
+      position: relative;
+      @include mat-elevation(12);
+      @include black-gradient();
+      height: 72px;
+      width: 100%;
+      padding: 0;
+      line-height: 72px;
+      font-size: 48px;
+
+      .section-title {
+        position: absolute;
+        left: 30px;
+        color: $primary-color;
+      }
+
+      mat-icon {
+        position: absolute;
+        right: 60px;
+        font-size: 72px;
+      }
     }
+
+    .accordion-content {
+      color: #000;
+      background-color: #fff;
+      opacity: 0.8;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+  }
 }

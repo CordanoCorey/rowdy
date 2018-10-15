@@ -1,6 +1,7 @@
 export class Rule {
     date: Date = new Date();
     content = '';
+    heading = '';
     tags: string[] = [];
 }
 

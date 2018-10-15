@@ -29,16 +29,20 @@ export class RulesComponent implements OnInit {
           }),
           build(Rule, {
             heading: 'Salary Cap',
-            content: `The salary cap for keeper + midlevel is: top scorer + 10 FPPG`,
+            content: `The salary cap for keeper + midlevel is: top scorer + 15 FPPG`,
             tags: []
           }),
           build(Rule, {
             heading: 'Luxury Tax',
             content: `After the second year with the same franchise tag / mid-level exception, teams must start paying a 5 FPPG "luxury tax" per year
              if they wish to continue keeping the same player. So, in the 3rd year with the same franchise tagged / mid-level exception player, the cap becomes
-             top scorer + 5 FPPG, in the 4th year it is max(top scorer FPPG, franchise tag FPPG),
-             5th year = max(top scorer FPPG - 5, franchise tag FPPG) and so on.`,
+             top scorer + 10 FPPG, in the 4th year it is top scorer FPPG + 5, 5th year = top scorer FPPG, and so on.`,
             tags: []
+          }),
+          build(Rule, {
+            heading: 'Mid-level Exception',
+            content: `A player must have started and scored more than 0 points in at least 5 games for the team seeking to declare that player as its mid-level exception.`,
+            tags: ['mid-level exception']
           }),
           build(Rule, {
             heading: 'Rookie Contract',

@@ -93,7 +93,7 @@ export class RulesComponent implements OnInit {
              After that round, the player can only be drafted by teams with season head-to-head victories over the protecting team.</span>
             <span class="ordered-item"><b>3. <u>Franchise Tags</u></b> (max 1 per team):
               Can only be stolen before or during the protected round by teams with season head-to-head victories over the protecting team 
-              AND a higher season-long ranking AND more total points scored for the season.
+              AND a higher season-long ranking AND more total points scored for the season AND more total points scored for the playoffs.
               The first year a player is given the franchise tag, owners use the round that player was drafted in the previous year to draft the player for the upcoming year
               (thereby freeing up earlier rounds for other picks). After the first year, the franchise tag must be drafted in the first round.</span>
             <span class="ordered-item"><b>4. <u>Mid-level Exceptions</u></b> (max 1 per team):

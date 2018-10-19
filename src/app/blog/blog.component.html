@@ -1,3 +1,59 @@
 <rowdy-container [hasWallpaper]="true">
-
+  <div id="inner-content" fxLayout="column" fxLayoutAlign="top center" fxLayoutGap="20px">
+    <iu-accordion class="mat-card blog-entry" [opened]="false">
+      <div class="accordion-trigger">
+        <img src="assets/blog-1.4.jpg">
+        <div class="right">
+          <button mat-fab class="font-effect-emboss">
+            <p>Oct</p>
+            <p class="day">19</p>
+            <p>2018</p>
+          </button>
+          <h2>
+            <mat-icon class="font-effect-outline">person</mat-icon>
+            <span class="by font-effect-3d-float">Dan</span>
+          </h2>
+          <h3 class="font-effect-3d-float">
+            The Case for Unlimited Acquisitions
+          </h3>
+          <span class="read-more font-effect-outline">Read More...</span>
+          <mat-chip-list class="font-effect-outline">
+            <mat-chip>Acquistion Limit</mat-chip>
+            <mat-chip>Mike Muscala</mat-chip>
+            <mat-chip>Marco Belinelli</mat-chip>
+            <mat-chip>Tomas Satoransky</mat-chip>
+            <mat-chip>Wes Matthews</mat-chip>
+          </mat-chip-list>
+        </div>
+      </div>
+      <div class="blog-entry-content accordion-content">
+        <p>
+          I am strongly against an acquisition limit. By limiting acquisitions, you limit a fundamental part of running
+          your team. The decision of who to add and you to drop are what differentiate good owners from great owners.
+          The ability to identify talent off the waiver wire is what separates the rowdy from the rest.
+        </p>
+        <p>
+          One of the best
+          parts of our league is that we take fantasy basketball seriously. This is a league that rewards smarts and
+          instincts. By limiting acquisitions, you make our league average. Are we rowdy as shit? The league I once
+          knew rewarded chaos! We got points for techs and ejections! Now, not only are we not embracing the chaos, we
+          are adding a rule that will suck the energy out of this place. I don’t want rowdy to become the rules as shit
+          league. That’s not to say that we don’t have rules, however, every rule change that we have made so far
+          (keepers, salary caps, expanded rosters, etc...)rewards good owners. This rule would punish good ownership.
+          If this rule must be implemented, I ask that it happen next year. I drafted my team with a strategy based on
+          having unlimited waiver wire moves. A change this big needs time to be implemented.
+        </p>
+        <p>
+          In closing, life is a game of inches. So is fantasy basketball. One Marco Belinelli drop and you don’t win
+          the day... one Mike Muscala add and you lose the week. Leaving a roster spot open for Tomas Satoransky means
+          you have to sacrifice Wesley Matthews. The inches we need are everywhere. The rowdy as shit league is
+          strongest when it has owners that will scratch and claw and fight for that inch. Now I can’t make you do
+          this. You’ve got to look at the owner next to you. Look at his roster. You are going to see owners who don’t
+          want a dumbed down version of fantasy basketball. Now, we either keep this league the most rowdy as it’s ever
+          been or we die with the rules. What are you going to do?
+        </p>
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/m_iKg7nutNY"></iframe>
+      </div>
+    </iu-accordion>
+  </div>
 </rowdy-container>

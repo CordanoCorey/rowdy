@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { MatChipsModule } from '@angular/material/chips';
 import { LibraryModule } from '@caiu/library';
 
 import { ContainerComponent } from './container/container.component';
@@ -10,6 +11,7 @@ import { SocialIconsComponent } from './social-icons/social-icons.component';
 @NgModule({
   imports: [
     LibraryModule,
+    MatChipsModule,
   ],
   declarations: [
     ContainerComponent,
@@ -20,6 +22,7 @@ import { SocialIconsComponent } from './social-icons/social-icons.component';
   ],
   exports: [
     LibraryModule,
+    MatChipsModule,
     ContainerComponent,
   ]
 })

@@ -3,7 +3,7 @@
 
 .sidenav {
   background: #111;
-  @include primary-hgradient();
+  @include black-hgradient();
   box-shadow: 5px 0 5px -2px #888;
   -webkit-box-shadow: 5px 0 5px -2px #888;
   -webkit-box-flex: 0;
@@ -25,6 +25,7 @@
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
+  height: 100%;
 
   a.link {
     @include mat-elevation(16);

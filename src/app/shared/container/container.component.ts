@@ -78,7 +78,7 @@ export class ContainerComponent extends SmartComponent implements OnInit {
   }
 
   get offsetLeft(): number {
-    return 0;
+    return this.mobile ? 0 : 120;
   }
 
   get offsetTop(): number {
@@ -87,6 +87,10 @@ export class ContainerComponent extends SmartComponent implements OnInit {
 
   get menuWidth(): number {
     return this.windowWidth;
+  }
+
+  get sidenavHeight(): number {
+    return this.windowHeight + 50 + 64;
   }
 
   get windowHeight(): number {
